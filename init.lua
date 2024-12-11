@@ -1,4 +1,6 @@
 vim.wo.number = true
+vim.opt["tabstop"] = 4
+vim.opt["shiftwidth"] = 4
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -30,8 +32,10 @@ require("lazy").setup({
     {
     	'nvim-telescope/telescope.nvim', tag = '0.1.8',
       	dependencies = { 'nvim-lua/plenary.nvim' }
-    }
-
+    },
+    {
+	"tpope/vim-fugitive",
+	}
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
