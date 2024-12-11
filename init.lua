@@ -1,3 +1,4 @@
+-- vim.cmd("colorscheme rose-pine")
 vim.wo.number = true
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4
@@ -35,6 +36,9 @@ require("lazy").setup({
     },
     {
 	"tpope/vim-fugitive",
+	},
+	{ 
+	"rose-pine/neovim", name = "rose-pine"
 	}
   },
   -- Configure any other settings here. See the documentation for more details.
