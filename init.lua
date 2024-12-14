@@ -36,11 +36,17 @@ require("lazy").setup({
       	dependencies = { 'nvim-lua/plenary.nvim' }
     },
     {
-	"tpope/vim-fugitive",
-	},
-	{ 
-	"rose-pine/neovim", name = "rose-pine"
-	}
+			"tpope/vim-fugitive",
+		},
+		{ 
+			"rose-pine/neovim", name = "rose-pine"
+		},
+		{
+			'barrett-ruth/live-server.nvim',
+			build = 'npm i -g live-server',
+			cmd = { 'LiveServerStart', 'LiveServerStop' },
+			config = true
+		}
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
