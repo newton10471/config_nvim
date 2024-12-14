@@ -1,7 +1,11 @@
 -- vim.cmd("colorscheme rose-pine")
 vim.wo.number = true
-vim.opt["tabstop"] = 4
-vim.opt["shiftwidth"] = 4
+vim.opt["tabstop"] = 2
+vim.opt["shiftwidth"] = 2
+vim.g.mapleader = ","
+vim.g.maplocalleader = "\\"
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -23,9 +27,6 @@ vim.opt.rtp:prepend(lazypath)
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
