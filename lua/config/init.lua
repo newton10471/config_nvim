@@ -1,6 +1,6 @@
 -- print("from config/init.lua")
 require("config.remap")
-require("config.lazy")
+require("config.lazy_init")
 
 vim.wo.number = true
 vim.opt["tabstop"] = 2

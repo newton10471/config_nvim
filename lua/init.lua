@@ -1,3 +1,4 @@
 -- require("newton10471")
 -- require("config")
 -- require("plugins")
+-- require("config.lazy_init")
